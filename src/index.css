@@ -1,0 +1,19 @@
+:root {
+    --left-color: #E6DEFF33;
+    --title-color-left: #4C3E8E;
+    --text-color-left: #2D2D2D;
+    --background: #F9F7F2;
+
+
+    /* right color */
+    --right-color-title: #1B1C1C;
+    --right-color-text: #484551;
+    --input-color: #FCF9F8;
+    --input-color-border: #C9C4D2;
+    --button-color: #352676;
+    --font-right: "Inter", sans-serif;
+
+    /* font */
+    --font-family: "Newsreader", serif;
+    --color-light: white;
+}

@@ -1,0 +1,17 @@
+/* الأنميشن اللي هيحصل */
+.page-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+        /* بتيجي من الجنب شوية */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

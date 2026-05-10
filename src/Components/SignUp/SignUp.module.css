@@ -1,0 +1,90 @@
+.container {
+    background-color: var(--background);
+}
+
+.right,
+.left {
+    width: 500px;
+    height: 555px;
+}
+
+.left {
+    background-color: var(--left-color);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.left .images {
+    width: 288px;
+    height: 288px;
+    position: relative;
+}
+
+
+
+.left h1 {
+    font-family: var(--font-family);
+    color: var(--button-color);
+}
+
+.left>span {
+    color: var(--right-color-text);
+    width: 54%;
+    text-align: center;
+    font-family: var(--font-right);
+}
+
+.right {
+    background-color: var(--color-light);
+    padding: 56px 60px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.right h2 {
+    font-family: var(--font-family);
+    color: var(--right-color-title);
+
+}
+
+.right>span {
+    font-family: var(--font-right);
+    color: var(--right-color-text);
+
+
+}
+
+form {
+    color: var(--right-color-title);
+    font-family: var(--font-right);
+
+}
+
+form>input {
+    background-color: var(--input-color);
+    border: 2px solid var(--input-color-border);
+    padding: 10px 16px 10px 16px;
+    border-radius: 8px;
+    height: 41px;
+    margin: 0 0 20px 0;
+}
+
+form .options a {
+    text-decoration: none;
+    color: var(--button-color);
+    font-weight: 600;
+}
+
+form button {
+    background-color: var(--button-color);
+    color: var(--color-light);
+    border: none;
+    border-radius: 8px;
+    padding: 9px 16px;
+}
+
+.login a {
+    text-decoration: none;
+    color: var(--button-color);
+    font-weight: 600;
+}
