@@ -41,7 +41,7 @@ export default function SignUp() {
                             </div>
                             <a href="#">Forgot password?</a>
                         </div>
-                        <button className={style.but}>Create Account  </button>
+                        <button className={style.but}> <Link to="/home">Create Account</Link>  </button>
                     </form>
                     <div className={`${style.login} w-100 text-center`}>
                         <span>Already have an account? </span><a href="#"><Link to="/login">Log in</Link></a>

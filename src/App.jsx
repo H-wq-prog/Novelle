@@ -6,6 +6,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import SignUp from './Components/SignUp/SignUp'
 import Authpage from './Pages/Authpage'
+import Home from './Pages/Home'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +14,7 @@ function App() {
   return (
     <>
       <Authpage></Authpage>
+      <Home></Home>
     </>
   )
 }

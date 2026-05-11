@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function Home() {
     return (
-        <div>Home</div>
+        <Routes>
+            <Route path="/home" element={<Home />} />
+        </Routes>
     )
 }
