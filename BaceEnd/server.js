@@ -17,6 +17,6 @@ app.use("/auth", routUser)
 
 
 const port = process.env.PORT || 4700
-app.listen(prompt, () => {
+app.listen(port, () => {
     console.log(`scssful run server in PORT ${port}`)
 })
