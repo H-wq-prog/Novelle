@@ -1,13 +1,48 @@
 import React from 'react'
 import style from './SignUp.module.css'
 import image from '../../assets/StylizedBook.svg'
-import { Link } from "react-router-dom";
-
+import { useNavigate, Link } from "react-router-dom";
+import { useState } from 'react';
+import axios from 'axios';
 export default function SignUp() {
-    const handleSubmit = (e) => {
-        e.preventDefault(); // السطر ده بيمنع الكلام الأصفر اللي طالع في الصورة
-        // هنا كود اللوجين بتاعك
+    const navigate = useNavigate(); // تعريف التوجيه
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        password: ''
+    });
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.id]: e.target.value });
     };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        // --- التأكد من وجود البيانات (Validation) ---
+        if (!formData.name || !formData.email || !formData.password) {
+            alert("يرجى ملء جميع الحقول");
+            return;
+        }
+
+        try {
+            const response = await axios.post(
+                'http://localhost:3000/auth/Signup',
+                formData
+            );
+
+            console.log("Success:", response.data);
+            alert("تم إنشاء الحساب بنجاح!");
+
+            // --- التحويل لصفحة الـ Home فقط عند النجاح ---
+            navigate('/home');
+
+        } catch (error) {
+            console.error(error);
+            alert(error.response?.data?.msg || "حدث خطأ أثناء التسجيل");
+        }
+    };
+
     return (
         <div className="page-fade-in">
             <div className={`${style.container} d-flex align-items-center justify-content-center vh-100 m-auto`}>
@@ -27,7 +62,7 @@ export default function SignUp() {
                 <div className={`${style.right} d-flex flex-column gap-2`}>
                     <h2>Welcome Back</h2>
                     <span className='mb-2'>Log in to continue your reading journey.</span>
-                    <form action="" className={`d-flex flex-column `}>
+                    <form action="" className={`d-flex flex-column `} onSubmit={handleSubmit} onChange={handleChange}>
                         <label htmlFor="name">Name</label>
                         <input type="text" id='name' placeholder='Jane Doe' name='username' />
                         <label htmlFor="email">Email</label>
@@ -41,10 +76,10 @@ export default function SignUp() {
                             </div>
                             <a href="#">Forgot password?</a>
                         </div>
-                        <button className={style.but}> <Link to="/home">Create Account</Link>  </button>
+                        <button className={style.but} type="submit">Create Account</button>
                     </form>
                     <div className={`${style.login} w-100 text-center`}>
-                        <span>Already have an account? </span><a href="#"><Link to="/login">Log in</Link></a>
+                        <span>Already have an account? </span><Link to="/login">Log in</Link>
                     </div>
                 </div>
             </div>

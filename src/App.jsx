@@ -7,15 +7,16 @@ import './App.css'
 import SignUp from './Components/SignUp/SignUp'
 import Authpage from './Pages/Authpage'
 import Home from './Pages/Home'
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <Authpage></Authpage>
-      <Home></Home>
-    </>
+    <Routes>
+      <Route path='/*' element={<Authpage />} />
+      <Route path='/Home' element={<Home />} />
+    </Routes>
   )
 }
 

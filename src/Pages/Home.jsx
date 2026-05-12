@@ -1,9 +1,10 @@
 import React from 'react'
-
+import HomeNavbar from '../Components/Home/Home'
 export default function Home() {
     return (
-        <Routes>
-            <Route path="/home" element={<Home />} />
-        </Routes>
+        <>
+            <HomeNavbar />
+
+        </>
     )
 }
