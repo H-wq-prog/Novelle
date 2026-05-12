@@ -1,0 +1,92 @@
+.container {
+    background-color: var( --background);
+}
+
+.parent {
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+
+}
+
+.left {
+    padding: 96px 60px;
+    width: 499px;
+    height: 557px;
+    background-color: #E6DEFF33;
+
+}
+
+.header {
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.left span {
+    font-family: var( --font-right);
+}
+
+.left h1 {
+    font-family: var(--font-family);
+    color: var(--h1-color);
+}
+
+.right {
+    padding: 96px 60px;
+    width: 500px;
+    height: 556px;
+    background-color: white;
+    border-radius: 12px ;
+    font-family: var( --font-right);
+}
+
+.right h2 {
+    color: var(--title-color);
+    font-family: var(--font-family);
+    font-weight: 500;
+
+}
+
+.right>span {
+    color: var(--text-color);
+    font-family: var(--text-font);
+
+}
+
+form label {
+    padding: 5px;
+    font-family: var(--text-font);
+    color: var(--title-color);
+    font-weight: 500;
+
+}
+
+form>input {
+    border-radius: 8px;
+    padding: 10px 16px;
+    background-color: var(--contianer-colour);
+    border: 2px solid #C9C4D2;
+}
+
+form button {
+    background-color: #352676;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 9px 16px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.right a {
+    text-decoration: none;
+    color: var(--button-color);
+    font-weight: 600;
+}
+.left .images {
+    width: 288px;
+    height: 288px;
+    position: relative;
+}

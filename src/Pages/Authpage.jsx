@@ -1,8 +1,7 @@
 import React from 'react'
 import { Routes, Route } from "react-router-dom";
 import SignUp from '../Components/SignUp/SignUp'
-import Login from '../Components/Login/Login'
-
+ import Login from '../Components/Login/Login'
 export default function Authpage() {
     return (
 

@@ -3,6 +3,11 @@ import style from './SideBar.module.css'
 
 export default function SideBar() {
     return (
-        <div>SideBar</div>
+   
+   <>
+
+   <div className={style.contianer}>SideBar</div>
+   
+   </>
     )
 }
