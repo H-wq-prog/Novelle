@@ -5,18 +5,18 @@ import { Outlet } from 'react-router-dom'
 
 export default function MainLayout() {
   return (
-    
+
     <>
-    <Navbar/>
-    <div  className='d-flex '>
+      <Navbar />
+      <div className='d-flex '>
+        <SideBar />
+        <main className='w-75'>
+          <Outlet />
+        </main>
 
-   <SideBar/>
-    <main className='w-75'>
-    <Outlet  />
-    </main>
+      </div>
 
-    </div>
-    
+
     </>
- )
+  )
 }

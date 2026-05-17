@@ -1,4 +1,109 @@
-.contianer{
-    height: 65px;
-    
+/* cont edit */
+.contianer {
+    height: 75px;
+
+    background-color: color-mix(in srgb, var(--input-color), transparent 50%);
+    border-bottom: 2px solid hsl(261, 13%, 80%, 30%);
+
+}
+
+/* logo edit */
+.navlogo {
+    width: 130px;
+    height: 40px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.navlogo h2 {
+    font-size: 24px;
+    color: var(--button-color);
+    margin: 0 0 0 10px;
+    font-family: var(--font-family);
+
+}
+
+/* links edit */
+
+.navlinks {
+    width: 224px;
+}
+
+.navlinks ul {
+    list-style: none;
+    width: 100%;
+
+}
+
+.navlinks ul li a {
+    text-decoration: none;
+    color: var(--right-color-text);
+    font-family: var(--font-right);
+    transition: all .2s ease-in-out;
+    position: relative;
+
+}
+
+.navlinks ul li a:hover {
+    color: var(--button-color);
+    font-weight: 700;
+
+
+}
+
+.navlinks ul li a:hover::after {
+
+    width: 100%;
+
+
+}
+
+.navlinks ul li a::after {
+    transition: width .3s ease-in-out;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--button-color);
+    position: absolute;
+    bottom: -2px;
+    left: 0%;
+
+
+}
+
+.user {
+    width: 65px;
+}
+
+.user button {
+    border: none;
+    background-color: transparent;
+    color: var(--right-color-text);
+}
+
+.user button:hover {
+
+    color: var(--button-color);
+}
+
+/* .user .avatar {
+    background-color: var(--button-color);
+    color: var(--background);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-family: var(--font-family);
+} */
+.user {
+    width: 82px;
+}
+
+.user .avatar {
+
+    width: 32px;
+    height: 32px;
+    font-family: var(--font-family);
 }
