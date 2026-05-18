@@ -11,14 +11,14 @@ export default function SideBar() {
     ]
     return (
 
-        <>
+        <div className='fixed-button sidebar-container'>
 
             <div className={style.contianer}>
                 <div className={`${style.title}`}>
                     <h1>My Library</h1>
                     <span>Personal Sanctuary</span>
                 </div>
-                <div className={`${style.links}`}>
+                <div className={`${style.links}  `}>
 
                     <ul>
                         {
@@ -27,10 +27,11 @@ export default function SideBar() {
                             ))
                         }
                     </ul>
+                    <button>+Add New Book</button>
                 </div>
 
             </div>
 
-        </>
+        </div>
     )
 }

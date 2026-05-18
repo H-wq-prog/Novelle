@@ -1,0 +1,14 @@
+.card {
+    background-color: var(--full-color);
+    width: 220px;
+    height: 165px;
+    border: 1px solid var(--stroke-color);
+    transition: all .2s ease-in;
+}
+
+.card:hover {
+    background-color: var(--cover-color);
+    border: 1px solid var(--button-color);
+    width: 200px;
+    height: 160px;
+}

@@ -15,3 +15,35 @@
         transform: translateX(0);
     }
 }
+
+
+.fixed-button {
+    position: fixed;
+
+    bottom: 20px;
+
+    right: 20px;
+
+    z-index: 9999;
+
+}
+
+.sticky-element {
+    position: sticky;
+    /* الرمز السحري للالتصاق */
+    top: 0;
+    /* يلتصق بمجرد وصوله للحافة العلوية (0 بكسل من الأعلى) */
+    z-index: 1000;
+    /* لضمان عدم اختفائه تحت البانر أو الصور */
+}
+
+.sidebar-container {
+    position: sticky !important;
+    /* علامة التعجب تضمن عدم وجود كود آخر يلغيه */
+    top: 70px;
+    /* مسافة تحت الناف بار ليظهر بوضوح */
+    height: calc(100vh - 70px);
+    /* تحديد الارتفاع بدقة ليفعل الالتصاق */
+    overflow-y: auto;
+    /* عشان لو عناصر السايد بار كتير يعمل سكرول جواه هو بس */
+}

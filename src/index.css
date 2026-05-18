@@ -16,4 +16,8 @@
     /* font */
     --font-family: "Newsreader", serif;
     --color-light: white;
+    --sectionColor: #382F4D;
+    --stroke-color: hsl(258, 18%, 33%, 20%);
+    --full-color: #E4E2E1;
+    --cover-color: hsl(255, 100%, 94%, 20%);
 }

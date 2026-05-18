@@ -1,6 +1,6 @@
 .contianer {
     width: 256px;
-    height: 100vh;
+    height: 92vh;
     background-color: #F6F3F2;
     padding: 20px;
 }
@@ -43,4 +43,20 @@
     background-color: hsl(255, 100%, 94%, 50%);
     color: var(--button-color);
 
+}
+
+.links {
+    position: relative;
+    height: 80%;
+}
+
+.links button {
+    position: absolute;
+    bottom: 0;
+    border: none;
+    border-radius: 12px;
+    color: var(--color-light);
+    background-color: var(--button-color);
+    width: 208px;
+    height: 48px;
 }

@@ -1,5 +1,73 @@
-.home {
-    width: 100%;
-    height: 10vh;
-    font-size: 200px;
+.Ititle {
+    background-image: linear-gradient(hsl(0, 0%, 100%, 60%), hsl(0, 0%, 100%, 60%)), url(../../assets/Elegant.png);
+    height: 531px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 40px;
+}
+
+.headerSection {
+    font-family: var(--font-family);
+    color: var(--sectionColor);
+    margin-bottom: 20px;
+}
+
+.Ititle .title {
+    width: 467px;
+}
+
+.title h1 {
+    color: var(--button-color);
+    font-family: var(--font-family);
+    width: 546px;
+    font-size: 58px;
+    font-weight: 600;
+}
+
+.title q,
+.title span {
+    font-family: var(--font-right);
+    font-size: 18px;
+    color: #5E5E5B;
+}
+
+.title hr {
+    width: 31px;
+    border: 1px solid #5E5E5B;
+}
+
+.image {
+    width: 214px;
+    height: 321px;
+}
+
+
+
+.book h3 {
+    font-size: 18px;
+    font-family: var(--font-family);
+    color: var(--right-color-title);
+    margin: 0;
+
+}
+
+.book span {
+    font-size: 14px;
+    font-family: var(--font-right);
+    color: #5E5E5B;
+}
+
+.number span {
+    font-size: 120px;
+    font-weight: 700;
+    color: hsl(261, 13%, 80%, 30%);
+    margin-right: 10px;
 }

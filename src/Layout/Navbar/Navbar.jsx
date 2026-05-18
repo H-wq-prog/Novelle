@@ -9,7 +9,7 @@ export default function Navbar({ userName = "user" }) {
         { title: "Catalog" }
     ]
     return (
-        <>
+        <div className='fixed-button sticky-element'>
             <div className={`${style.contianer} d-flex justify-content-between align-items-center p-4`}>
                 <div className={`${style.navlogo} d-flex justify-content-center align-items-center`}>
 
@@ -36,6 +36,6 @@ export default function Navbar({ userName = "user" }) {
                 </div>
 
             </div>
-        </>
+        </div>
     )
 }

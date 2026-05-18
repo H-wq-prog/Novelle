@@ -7,10 +7,11 @@ export default function MainLayout() {
   return (
 
     <>
+
       <Navbar />
       <div className='d-flex '>
         <SideBar />
-        <main className='w-75'>
+        <main className='w-75 flex-grow-1'>
           <Outlet />
         </main>
 
